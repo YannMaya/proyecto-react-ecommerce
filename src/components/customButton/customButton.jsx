@@ -1,24 +1,30 @@
-//hook funciones incorporadas en react
-//useState = estado
+//hook =  funciones incorporadas en react
+//useState = estado = variables
 
 import {useState} from "react"
 
-const CustomButton = () => {
+const CustomButton = ({text}) => {
 
-    const miEstado = useState()
-    console.log(miEstado)
+    /* const miEstado = useState(20)
+    let counter = miEstado[0]
+    let setCounter = miEstado[1] */
 
-    const counter = 0
+    const [counter, setCounter] = useState(0)
 
-    const sumar = () =>{
+    console.log(counter)
+    console.log(setCounter)
+
+    /* let counter = 0; */
+
+    /* const sumar = () =>{
         //mutando el valor del contador (reasignar valor)
-        counter ++
-    }
+        setCounter(counter + 1)
+    } */
     
     return (
     <>    
-        <button onClick={sumar}>Click aquí</button>
-        <h2>{counter}</h2>
+        <button onClick={setCounter}>{text}</button>
+        
     </>
 )
 }
