@@ -1,0 +1,15 @@
+.contador{
+    background-color: rebeccapurple;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.numeroContador{
+    font-size: 4rem;
+    padding: 2px 20px 2px 20px;
+}
