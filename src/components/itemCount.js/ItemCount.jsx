@@ -1,18 +1,21 @@
 import "./ItemCount.css"
 import { useState } from "react"
 
-const ItemCount = () => {
+const ItemCount = ({stock, initial, onAdd}) => {
 
-    const [contador, setContador] = useState(0)
+    const [contador, setContador] = useState(initial)
+
 
     const sum = () =>{
-        setContador(contador + 1)
+            setContador(contador + 1)
     }
-
+    
     const res = () =>{
         setContador(contador - 1)
     }
 
+    
+    
     return (
             <div className="contador">
                 <button onClick={sum} style={{
@@ -30,10 +33,9 @@ const ItemCount = () => {
                             color: "black",
                             padding: "5px",
                 }}>-</button>
-                <button>Agregar al carrito</button>
+                <button onClick={onAdd}>Agregar al carrito</button>
             </div>
     )
 }
 
 export default ItemCount
-

@@ -1,13 +1,13 @@
 import ItemListContainer from "./components/itemListContainer/ItemListContainer";
 import Navegacion from "./components/navBar/NavBar";
-import CustomButton from "./components/customButton/CustomButton";
+/* import CustomButton from "./components/customButton/CustomButton"; */
 
 function App() {
   return (
     <div>
       <Navegacion />
       <ItemListContainer greetings={"Buenas, ¿cómo le va?"}/>
-      <CustomButton text={"logout"}/>
+      {/* <CustomButton text={"logout"}/> */}
     </div>
   );
 }
