@@ -3,7 +3,7 @@ import {useState, useEffect} from "react";
 import ItemCount from '../itemCount.js/ItemCount';
 import "./ItemListContainer.css";
 import {productos} from "../../productos";
-import Item from "../Item/Item";
+import Item from "../ProductCard/ProductCard";
 
 const ItemListContainer = ( { greetings } ) => {
 
