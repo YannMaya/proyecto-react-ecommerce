@@ -5,7 +5,7 @@ export const productos = [
         name: "green nails",
         price: 500,
         stock: 5,
-        description: "beautiful green nails",
+        description: "sencillos",
         img: "https://res.cloudinary.com/dt1bumvty/image/upload/v1670099607/2_bvy4gx.png"
     },
     {
@@ -13,7 +13,7 @@ export const productos = [
         name: "black nails",
         price: 500,
         stock: 5,
-        description: "beautifully done",
+        description: "sencillos",
         img: "https://res.cloudinary.com/dt1bumvty/image/upload/v1670099607/1_tkqlnz.png"
     },
     {
@@ -21,7 +21,7 @@ export const productos = [
         name: "blue nails",
         price: 900,
         stock: 5,
-        description: "for every occasion",
+        description: "complejos",
         img:"https://res.cloudinary.com/dt1bumvty/image/upload/v1670099607/3_bjtdyn.png"
     },
     {
@@ -29,7 +29,7 @@ export const productos = [
         name: "metal nails",
         price: 800,
         stock: 5,
-        description: "Zapatillas de ultima generacion para el deporte",
+        description: "complejos",
         img: "https://res.cloudinary.com/dt1bumvty/image/upload/v1670099607/5_njwkvv.png"
     }
 
