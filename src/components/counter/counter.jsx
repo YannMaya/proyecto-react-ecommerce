@@ -1,17 +1,23 @@
 import CustomButton from "../customButton/CustomButton"
 import { useState } from "react"
 
-const Counter = ({stock, initial, onAdd}) => {
+const Counter = () => {
 
-  const [counter, setCounter] = useState(initial)
+  const [counter, setCounter] = useState(0)
+
+    const sumar = () =>{
+        setCounter(counter + 1)
+    }
+
+    const restar = () =>{
+        setCounter(counter - 1)
+    }
 
   return (
     <div>
       <h2>{counter}</h2>
-      <CustomButton text={"sumar"} counter={counter} setCounter={setCounter}/>
-      <button>+</button>
-      <button>-</button>
-      <button>Agregar al carrito</button>
+      <CustomButton text={"sumar"} onClick={sumar} setCounter={setCounter} counter={counter}/>
+      <CustomButton text={"restar"} onClick={restar} setCounter={setCounter} counter={counter}/> 
     </div>
   )
 }

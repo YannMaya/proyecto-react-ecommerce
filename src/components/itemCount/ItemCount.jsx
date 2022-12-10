@@ -1,16 +1,23 @@
 import "./ItemCount.css"
 import { useState } from "react"
 
-const ItemCount = () => {
+const ItemCount = ({initial, stock}) => {
 
-    const [contador, setContador] = useState(0)
+    const [contador, setContador] = useState(initial)
 
     const sum = () =>{
+        if(contador < stock){
         setContador(contador + 1)
+        }
     }
 
     const res = () =>{
+        if(contador > initial){
         setContador(contador - 1)
+        }
+    }
+    const onAdd = ( cantidad ) => {
+        console.log("la cantidad es: ", cantidad)
     }
 
     return (
@@ -30,10 +37,10 @@ const ItemCount = () => {
                             color: "black",
                             padding: "5px",
                 }}>-</button>
-                <button>Agregar al carrito</button>
+                <button onClick={()=> onAdd(contador)}>Agregar al carrito</button>
             </div>
     )
 }
 
-export default ItemCount
+export default ItemCount;
 
