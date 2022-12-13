@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
 
     const [product, setProduct] = useState ({})
 
-    const {id} = useParams()
+    const {id} = useParams() //es un hook que al ejecutarse me devuelve un objeto, y los parametros que se recuperan, se recuperan como string
     console.log(id)
 
     
