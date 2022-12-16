@@ -19,11 +19,11 @@ function App() {
 
         <Route path="/" element={<ItemListContainer greetings={"Bienvenido a nuestra tienda"}/>}/> 
         
-        <Route path="/category/:categoryName" element={<ItemListContainer greetings={"Bienvenido a nuestra tienda"}/>}/> 
+        <Route path="/category/:categoryName" /* clave de la propiedad del objeto que devuelve useParams */ element={<ItemListContainer greetings={"Bienvenido a nuestra tienda"}/>}/> 
 
         <Route path="/category" element={<ItemListContainer greetings={"Bienvenido a nuestra tienda"}/>}/> 
 
-        <Route path="/itemDetail/:id" element={<ItemDetailContainer/>}/> 
+        <Route path="/itemDetail/:id" element={<ItemDetailContainer/>}/> {/* yo le puedo poner el nombre que quiera a path, pero obtio seria mas facil si le pongo el mismo que el elemento al que quiero que se dirija */}
 
         <Route path="/cart" element={<h3>carrito</h3>}/> 
 

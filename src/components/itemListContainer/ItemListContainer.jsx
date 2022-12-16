@@ -59,7 +59,7 @@ const ItemListContainer = ({ greetings }) => {
     }, [categoryName]);
 
 /*    useEffect(()=>{
-        const getPost = fetch("https://jsonplaceholder.typicode.com/posts")
+        const getPost = fetch("https://jsonplaceholder.typicode.com/posts/2")
         getPost
         .then((res)=>res.json())
         .then((res)=>setPosts(res))
