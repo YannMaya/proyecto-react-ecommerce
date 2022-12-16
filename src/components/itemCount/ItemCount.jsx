@@ -7,7 +7,7 @@ const ItemCount = ({initial, stock}) => {
 
     const sum = () =>{
         // eslint-disable-next-line no-unused-expressions
-        contador < stock ? setContador (contador - 1) : null;
+        contador < stock ? setContador (contador + 1) : null;
     }
 
     const res = () => {
