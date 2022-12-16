@@ -25,4 +25,4 @@ function Navegacion() {
     );
 }
 
-export default Navegacion;
+export default Navegacion; //le puse as[i porque no estaba seguro si se confundiria con la etiqueta que me trabje de bootstrap Navbar

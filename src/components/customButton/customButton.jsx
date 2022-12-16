@@ -20,4 +20,4 @@ const CustomButton = ({text, counter, setCounter}) => {
 )
 }
 
-export default CustomButton
+export default CustomButton;
